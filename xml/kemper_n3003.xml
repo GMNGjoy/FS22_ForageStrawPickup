@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="cutter" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <parentFile xmlFilename="$data/vehicles/kemper/n3003/n3003.xml">
+        <attributes>
+            <!-- update the values -->
+            <set path="vehicle.storeData.name" value="3003 +"/>
+            <set path="vehicle.storeData.image" value="icons/kemper_n3003.dds"/>
+            <set path="vehicle.storeData.price" value="20501"/>
+            <set path="vehicle.storeData.specs.workingWidth" value="3.6"/>
+            <set path="vehicle.storeData.functions.function(1)" value="$l10n_function_pickupStraw"/>
+
+            <!-- make it a little faster just because -->
+            <set path="vehicle.base.speedLimit#value" value="18"/>
+            <set path="vehicle.base.objectChanges.objectChange(0)#node" value="areaStart"/>
+            <set path="vehicle.base.objectChanges.objectChange(0)#translationActive" value="1.800 0 0.202"/>
+            <set path="vehicle.base.objectChanges.objectChange(1)#node" value="areaWidth"/>
+            <set path="vehicle.base.objectChanges.objectChange(1)#translationActive" value="-1.80 0 0.202"/>
+
+            <!-- update the fruit type converter -->
+            <set path="vehicle.cutter#fruitTypeCategories" value="PICKUPPLUS"/>
+            <set path="vehicle.cutter#fruitTypeConverter" value="FORAGEPICKUP"/>      
+
+            <!-- extra materials -->
+            <set path="vehicle.baseMaterial.material(1)#name" value="n3003_vmask_mat"/>
+            <set path="vehicle.baseMaterial.material(1)#baseNode" value="0>0|0|0|4|2"/>
+            <set path="vehicle.baseMaterial.material(1).shaderParameter(0)#name" value="colorMat0"/>
+            <set path="vehicle.baseMaterial.material(1).shaderParameter(0)#value" value="KEMPER_RED1"/>
+            <set path="vehicle.baseMaterial.material(2)#name" value="n3003NewHollandConfig_vmask_mat"/>
+            <set path="vehicle.baseMaterial.material(2)#baseNode" value="0>0|0|0|3|1|0"/>
+            <set path="vehicle.baseMaterial.material(2).shaderParameter(0)#name" value="colorMat0"/>
+            <set path="vehicle.baseMaterial.material(2).shaderParameter(0)#value" value="KEMPER_RED1"/>
+            <set path="vehicle.baseMaterial.material(3)#name" value="n3003ClaasConfig_vmask_mat"/>
+            <set path="vehicle.baseMaterial.material(3)#baseNode" value="0>0|0|0|4|1|0"/>
+            <set path="vehicle.baseMaterial.material(3).shaderParameter(0)#name" value="colorMat0"/>
+            <set path="vehicle.baseMaterial.material(3).shaderParameter(0)#value" value="KEMPER_RED1"/>
+            <set path="vehicle.baseMaterial.material(4)#name" value="n3003FendtConfig_vmask_mat"/>
+            <set path="vehicle.baseMaterial.material(4)#baseNode" value="0>0|0|0|1|1|0"/>
+            <set path="vehicle.baseMaterial.material(4).shaderParameter(0)#name" value="colorMat0"/>
+            <set path="vehicle.baseMaterial.material(4).shaderParameter(0)#value" value="KEMPER_RED1"/>
+            <set path="vehicle.baseMaterial.material(5)#name" value="n3003RostselmashConfig_vmask_mat"/>
+            <set path="vehicle.baseMaterial.material(5)#baseNode" value="0>0|0|0|5|0"/>
+            <set path="vehicle.baseMaterial.material(5).shaderParameter(0)#name" value="colorMat0"/>
+            <set path="vehicle.baseMaterial.material(5).shaderParameter(0)#value" value="KEMPER_RED1"/>
+
+            <!-- add in base material color selection -->
+            <set path="vehicle.baseMaterialConfigurations#useDefaultColors" value="true"/>
+            <!-- <set path="vehicle.baseMaterialConfigurations#defaultColorIndex" value="31"/> -->
+            <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(0)#name" value="Kemper Red"/>
+            <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(0)#color" value="KEMPER_RED1"/>
+            <set path="vehicle.baseMaterialConfigurations.material(0)#name" value="n3003_mat"/>
+            <set path="vehicle.baseMaterialConfigurations.material(0)#shaderParameter" value="colorMat0"/>
+            <set path="vehicle.baseMaterialConfigurations.material(1)#name" value="n3003_vmask_mat"/>
+            <set path="vehicle.baseMaterialConfigurations.material(1)#shaderParameter" value="colorMat0"/>
+
+            <!-- add in design material color selection -->
+            <set path="vehicle.designMaterialConfigurations#useDefaultColors" value="true"/>
+            <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(0)#name" value="Kemper Red"/>
+            <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(0)#color" value="KEMPER_RED1"/>
+            <set path="vehicle.designMaterialConfigurations.material(0)#name" value="n3003NewHollandConfig_vmask_mat"/>
+            <set path="vehicle.designMaterialConfigurations.material(0)#shaderParameter" value="colorMat0"/>
+            <set path="vehicle.designMaterialConfigurations.material(1)#name" value="n3003ClaasConfig_vmask_mat"/>
+            <set path="vehicle.designMaterialConfigurations.material(1)#shaderParameter" value="colorMat0"/>
+            <set path="vehicle.designMaterialConfigurations.material(2)#name" value="n3003FendtConfig_vmask_mat"/>
+            <set path="vehicle.designMaterialConfigurations.material(2)#shaderParameter" value="colorMat0"/>
+            <set path="vehicle.designMaterialConfigurations.material(3)#name" value="n3003RostselmashConfig_vmask_mat"/>
+            <set path="vehicle.designMaterialConfigurations.material(3)#shaderParameter" value="colorMat0"/>
+            
+            <!-- rim configurations -->
+            <set path="vehicle.wheels.hubs.colorMat0" value="SHARED_BLACK2"/>
+            <set path="vehicle.rimColorConfigurations#useDefaultColors" value="true"/>
+            <set path="vehicle.rimColorConfigurations#price" value="0"/>
+            <set path="vehicle.rimColorConfigurations.rimColorConfiguration(0)#name" value="Kemper Red"/>
+            <set path="vehicle.rimColorConfigurations.rimColorConfiguration(0)#color" value="KEMPER_RED1"/>
+            
+
+         </attributes>
+    </parentFile>
+
+    <!-- ONLY FOR ICON GENERATION -->
+    <storeData>
+        <name>3003 +</name>
+        <image>icons/kemper_n3003.png</image>
+        <brand>KEMPER</brand>
+        <category>forageHarvesterCutters</category>
+    </storeData>
+</vehicle>

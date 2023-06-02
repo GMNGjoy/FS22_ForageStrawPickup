@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="cutter" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <parentFile xmlFilename="$data/vehicles/kemper/n3003/n3003.xml">
+        <attributes>
+            <set path="vehicle.storeData.brand" value="JOHNDEERE"/>
+            <set path="vehicle.storeData.name" value="639 Premium +"/>
+            <set path="vehicle.storeData.image" value="icons/johndeere_premium639.dds"/>
+
+            <set path="vehicle.storeData.specs.combination#xmlFilename" value="$data/vehicles/johnDeere/series9000/series9000.xml"/>
+            <clearList path="vehicle.storeData.specs.combination" keepIndex="1"/>
+
+            <set path="vehicle.attachable.inputAttacherJointConfigurations.inputAttacherJointConfiguration(0)#isSelectable" value="false"/>
+            <set path="vehicle.attachable.inputAttacherJointConfigurations.inputAttacherJointConfiguration(1)#isSelectable" value="false"/>
+            <set path="vehicle.attachable.inputAttacherJointConfigurations.inputAttacherJointConfiguration(2)#isSelectable" value="false"/>
+            <set path="vehicle.attachable.inputAttacherJointConfigurations.inputAttacherJointConfiguration(3)#isSelectable" value="true"/>
+            <set path="vehicle.attachable.inputAttacherJointConfigurations.inputAttacherJointConfiguration(4)#isSelectable" value="false"/>
+            
+            <!-- update the values -->
+            <set path="vehicle.storeData.price" value="20501"/>
+            <set path="vehicle.storeData.specs.workingWidth" value="3.6"/>
+            <set path="vehicle.storeData.functions.function(1)" value="$l10n_function_pickupStraw"/>
+
+            <!-- make it a little faster just because -->
+            <set path="vehicle.base.speedLimit#value" value="18"/>
+            <set path="vehicle.base.objectChanges.objectChange(0)#node" value="areaStart"/>
+            <set path="vehicle.base.objectChanges.objectChange(0)#translationActive" value="1.800 0 0.202"/>
+            <set path="vehicle.base.objectChanges.objectChange(1)#node" value="areaWidth"/>
+            <set path="vehicle.base.objectChanges.objectChange(1)#translationActive" value="-1.80 0 0.202"/>
+
+            <!-- update the fruit type converter -->
+            <set path="vehicle.cutter#fruitTypeCategories" value="PICKUPPLUS"/>
+            <set path="vehicle.cutter#fruitTypeConverter" value="FORAGEPICKUP"/>      
+
+            <set path="vehicle.baseMaterial.material(1)#name" value="n3003_vmask_mat"/>
+            <set path="vehicle.baseMaterial.material(1)#baseNode" value="0>0|0|0|4|2"/>
+            <set path="vehicle.baseMaterial.material(1).shaderParameter(0)#name" value="colorMat0"/>
+            <set path="vehicle.baseMaterial.material(1).shaderParameter(0)#value" value="KEMPER_RED1"/>
+
+            <!-- add in base material color selection -->
+            <set path="vehicle.baseMaterialConfigurations#useDefaultColors" value="true"/>
+            <set path="vehicle.baseMaterialConfigurations#defaultColorIndex" value="9"/>
+            <set path="vehicle.baseMaterialConfigurations.material(0)#name" value="n3003_mat"/>
+            <set path="vehicle.baseMaterialConfigurations.material(0)#shaderParameter" value="colorMat0"/>
+            <set path="vehicle.baseMaterialConfigurations.material(1)#name" value="n3003_vmask_mat"/>
+            <set path="vehicle.baseMaterialConfigurations.material(1)#shaderParameter" value="colorMat0"/>
+
+            <!-- rim configurations -->
+            <set path="vehicle.wheels.hubs.color0" value="SHARED_BLACK2"/>
+            <set path="vehicle.rimColorConfigurations#useDefaultColors" value="true"/>
+            <set path="vehicle.rimColorConfigurations#defaultColorIndex" value="9"/>
+            <set path="vehicle.rimColorConfigurations#price" value="0"/>
+         </attributes>
+    </parentFile>
+
+    <!-- ONLY FOR ICON GENERATION -->
+    <storeData>
+        <name>639 Premium  +</name>
+        <image>icons/johndeere_premium639.png</image>
+        <brand>JOHNDEERE</brand>
+        <category>forageHarvesterCutters</category>
+    </storeData>
+</vehicle>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/fruitTypes.xsd">
+    <!-- Add in more fruit types that the pickup is allowed to work on -->
+    <fruitTypeCategories>
+        <fruitTypeCategory name="PICKUPPLUS">GRASS WHEAT BARLEY OAT CANOLA SORGHUM SOYBEAN SUNFLOWER CORN</fruitTypeCategory>
+    </fruitTypeCategories>
+
+    <!-- Add in a custom converter type for pickup, converting from the fruit-type to straw -->
+    <fruitTypeConverters>
+        <fruitTypeConverter name="FORAGEPICKUP">
+            <converter from="GRASS"     to="GRASS_WINDROW" factor="1.0" windrowFactor="1.0" />
+            <converter from="WHEAT"     to="STRAW"         factor="1.0" windrowFactor="1.1" />
+            <converter from="BARLEY"    to="STRAW"         factor="1.0" windrowFactor="1.1" />
+            <converter from="OAT"       to="STRAW"         factor="1.0" windrowFactor="1.1" />
+
+            <!-- support ExtendedStrawCrops mod -->
+            <converter from="CANOLA SORGHUM SOYBEAN SUNFLOWER CORN"      to="STRAW"         factor="1.0" windrowFactor="1.1" />
+        </fruitTypeConverter>
+    </fruitTypeConverters>
+</map>

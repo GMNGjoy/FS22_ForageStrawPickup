@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="cutter" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <parentFile xmlFilename="$data/vehicles/krone/easyFlow300S/easyFlow300S.xml">
+        <attributes>
+            <set path="vehicle.storeData.name" value="EasyFlow 300 S +"/>
+            <set path="vehicle.storeData.image" value="icons/krone_easyFlow300S.dds"/>
+            <set path="vehicle.storeData.price" value="20501 "/>
+            <set path="vehicle.storeData.specs.workingWidth" value="3.6"/>
+            <set path="vehicle.storeData.functions.function(1)" value="$l10n_function_pickupStraw"/>
+
+            <!-- make it a little faster just because -->
+            <set path="vehicle.base.speedLimit#value" value="18"/>
+            <set path="vehicle.base.objectChanges.objectChange(0)#node" value="areaStart"/>
+            <set path="vehicle.base.objectChanges.objectChange(0)#translationActive" value="1.800 0 0.202"/>
+            <set path="vehicle.base.objectChanges.objectChange(1)#node" value="areaWidth"/>
+            <set path="vehicle.base.objectChanges.objectChange(1)#translationActive" value="-1.80 0 0.202"/>
+
+            <!-- update the fruit type converter -->
+            <set path="vehicle.cutter#fruitTypeCategories" value="PICKUPPLUS"/>
+            <set path="vehicle.cutter#fruitTypeConverter" value="FORAGEPICKUP"/>  
+
+            <!-- add in base material color selection -->
+            <set path="vehicle.baseMaterialConfigurations#useDefaultColors" value="true"/>
+            <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(0)#name" value="$l10n_color_kroneGreen"/>
+            <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(0)#color" value="KRONE_GREEN1"/>
+            <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(1)#name" value="$l10n_color_kroneYellow"/>
+            <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(1)#color" value="KRONE_YELLOW1"/>
+            <set path="vehicle.baseMaterialConfigurations.material(0)#name" value="easyFlow300S_mat"/>
+            <set path="vehicle.baseMaterialConfigurations.material(0)#shaderParameter" value="colorMat0"/>
+            
+            <!-- add in design material color selection -->
+            <set path="vehicle.designMaterialConfigurations#useDefaultColors" value="true"/>
+            <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(0)#name" value="$l10n_color_kroneYellow"/>
+            <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(0)#color" value="KRONE_YELLOW1"/>
+            <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(1)#name" value="$l10n_color_kroneGreen"/>
+            <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(1)#color" value="KRONE_GREEN1"/>
+            <set path="vehicle.designMaterialConfigurations.material(0)#name" value="easyFlow300S_mat"/>
+            <set path="vehicle.designMaterialConfigurations.material(0)#shaderParameter" value="colorMat1"/>
+            <set path="vehicle.designMaterialConfigurations.material(1)#name" value="easyFlow300S_mat"/>
+            <set path="vehicle.designMaterialConfigurations.material(1)#shaderParameter" value="colorMat2"/>
+
+            <!-- rim configurations -->
+            <set path="vehicle.wheels.rimColor" value="SHARED_BLACK2"/>
+            <set path="vehicle.rimColorConfigurations#useDefaultColors" value="true"/>
+            <set path="vehicle.rimColorConfigurations#defaultColorIndex" value="0"/>
+            <set path="vehicle.rimColorConfigurations#price" value="0"/>
+         </attributes>
+    </parentFile>
+
+    <!-- ONLY FOR ICON GENERATION -->
+    <storeData>
+        <name>EasyFlow 300 S +</name>
+        <image>icons/krone_easyFlow300S.dds</image>
+        <brand>KRONE</brand>
+        <category>forageHarvesterCutters</category>
+    </storeData>
+</vehicle>

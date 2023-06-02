@@ -1,86 +1,64 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<modDesc descVersion="66">
-    <author>raulycristi1 [VSR Modding Sur], GMNGjoy</author>
-    <version>1.0.0.1</version>
+<modDesc descVersion="74">
+    <author>GMNGjoy</author>
+    <contributors>
+        <contributor>Jos</contributor><!-- Loader script for fruitTypes & Support for Jos Extended Straw Crops -->
+    </contributors>
+    <version>1.0.0.0</version>
     <title>
-        <en>Devour Trees GMNG</en>
-        <de>Baumverschlinger GMNG</de>
-        <es>Devora Arboles GMNG</es>
+        <en>Forage Harvester Straw Pickup</en>
+        <de>Feldhäcksler-Strohaufnahme</de>
     </title>
 <description>
-<en><![CDATA[This Machine is capable of devouring hundreds of trees and trunks in a few seconds, so its price is quite high.
+<en><![CDATA[Adds in the ability to pickup straw from fields that generate straw from 
+the crop, to all basegame forage pickup headers.
 
-- Main Colour Selection
+All modified headers have color selection, slight speed increase, and slight working width increase.
+Since the Forage Harvester is chopping the straw, you will also get a slight 10% increase in straw.
 
-- Price: $ 25,000
-- Capacity: 0 L
+Headers:
+- Claas PICKUP 300 +
+- Kemper 3003 +
+- John Deere Header 639 +
+- Krone EasyFlow 300 S +
 
-Configurations
-- No Spout (Unrealistic): $ 50,000
-- Unreal Capacity (50,000 L): $50,000
+Headers cost $1 more than basegame
 ]]></en>
-<de><![CDATA[Diese Maschine ist in der Lage, hunderte von Bäumen und Stämmen in wenigen Sekunden zu zerstören, daher ist ihr Preis ziemlich hoch.
+<de><![CDATA[Fügt die Möglichkeit hinzu, Stroh von Feldern aufzunehmen, auf denen Stroh erzeugt wird
+der Ernte bis hin zu allen Grundfutter-Pickup-Vorsätzen des Basisspiels.
 
-- Hauptfarbauswahl
+Alle modifizierten Schneidwerke verfügen über eine Farbauswahl, eine leichte Geschwindigkeitserhöhung und eine leichte Vergrößerung der Arbeitsbreite.
+Da der Feldhäcksler das Stroh häckselt, ergibt sich auch eine leichte Strohzunahme von 10 %.
 
-- Preis: 25.000 €
-- Kapazität: 0 L
+Überschriften:
+- Claas PICKUP 300 +
+- Kemper 3003 +
+- John Deere Header 639 +
+- Krone EasyFlow 300 S +
 
-Konfigurationen
-- Kein Auslauf (unrealistisch): 50.000 €
-- Unwirkliche Kapazität (50.000 Liter): 50.000 €
+Header kosten 1 $ mehr als das Basisspiel
 ]]></de>
-<es><![CDATA[Esta Máquina es Capaz de Devorar Cientos de Árboles y los Troncones en Pocos Segundos, Por eso su Precio es Elevado.
 
-- Selección Color Principal
-
-- Precio: 25.000 €
-- Capacidad: 0 L
-
-Configurationes
-- Sin pico (poco realista): 50.000 €
-- Capacidad irreal( 50.000 L): 50.000 €
-]]></es>
-</description>
-    <iconFilename>icon.dds</iconFilename>
+    </description>
+    <iconFilename>icons/modHubIcon.dds</iconFilename>
     <multiplayer supported="true"/>
 	
-	<vehicleTypes>
-        <type name="Devourer" parent="baseFillable" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
-			<specialization name="woodCrusher" />
-			<specialization name="dischargeable" />
-			<specialization name="pipe" />
-			<specialization name="treeSaw" /> 
-			<specialization name="stumpCutter" />
-            <specialization name="logGrab" />
-			<specialization name="turnOnVehicle" />
-        </type>
-    </vehicleTypes>
-	
     <storeItems>
-        <storeItem xmlFilename="eat_trees.xml"/>
-    </storeItems>	
-	
-	<l10n>
-        <text name="configuration_real_unreal">
-            <en>Real or Unreal</en>
-            <de>Real oder Fiktiv</de>
-            <es>Real o Irreal</es>
+        <storeItem xmlFilename="xml/claas_pickup300.xml"/>
+        <storeItem xmlFilename="xml/kemper_n3003.xml"/>
+        <storeItem xmlFilename="xml/johndeere_header639.xml"/>
+        <storeItem xmlFilename="xml/krone_easyFlow300S.xml"/>
+    </storeItems>
+
+    <extraSourceFiles>
+        <sourceFile filename="scripts/ForageStrawPickup.lua" />
+    </extraSourceFiles>
+
+    <l10n>
+        <text name="function_pickupStraw">
+            <en>This pickup header is customized to pickup both grass &amp; straw.</en>
+            <de>Dieses Pickup-Vorsatzgerät ist so konzipiert, dass es sowohl Gras als auch Stroh aufnimmt.</de>
         </text>
-        <text name="configuration_unreal">
-            <en>Unreal</en>
-            <de>Fiktiv</de>
-            <es>Irreal</es>
-        </text>
-        <text name="configuration_real">
-            <en>Real</en>
-            <de>Real</de>
-            <es>Real</es>
-        </text>
-        <text name="configuration_0L">
-            <en>No Capacity (Devour)</en>
-            <de>Keine Kapazität</de>
-            <es>Sin Capacidad</es>
-        </text>
-    </l10n>	
+    </l10n>
+
 </modDesc>
