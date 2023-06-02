@@ -1,11 +1,11 @@
 # Forage Harvester Straw Pickup
-Gameplay update to ForageHarvesters Pickup headers by creating a custom `FORAGEPICKUP` _fruitTypeCategory_ to allow straw to be picked up from basegame straw-producing fields (`WHEAT BARLEY OAT`), as well as crops producing straw from the Extended Straw Crops mod (`CANOLA SORGHUM SOYBEAN SUNFLOWER CORN`)
+Gameplay update to ForageHarvesters Pickup headers by creating a custom `FORAGEPICKUP` _fruitTypeCategory_ to allow straw to be picked up from basegame straw-producing fields (`WHEAT BARLEY OAT`), as well as crops producing straw from the [Extended Straw Crops](https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=253483&title=fs2022) mod (`CANOLA CORN SORGHUM SOYBEAN SUNFLOWER`)
 
-- Customized forage harvester headers with the new _fruitTypeCategory_ `FORAGEPICKUP` have been added to the store to allow this functionality to be used - all headers are Giants assets with XML modifications.
+- Customized basegame forage harvester headers with the new `FORAGEPICKUP` _fruitTypeCategory_ have been added to the store to enable the straw pickup functionality to be used - all headers are Giants assets with XML modifications.
 
-Loading script to force-load new fruitTypes & fillTypes based off of similar code from Jos Modding, code adapted to this purpose & used with permission.
+- LUA script is used to force-load new _fruitTypes_ &amp; _fillTypes_, which is based off of a similar script from Jos Modding in the [Swathing Addon](https://www.farming-simulator.com/mod.php?lang=en&country=sk&mod_id=267323). That code adapted to this purpose & used with permission.
 
-PC only due to script usage.
+**PC only** due to script usage.
 
 ## Description from the ModDesc
 > Adds in the ability to pickup straw from fields that generate straw from 
@@ -36,13 +36,13 @@ Since the Forage Harvester is chopping the straw, you will also get a slight 10%
 _Forage Harvester in the field picking up straw_
 
 ![Forage Pickup Header](/_screenshots/forageStrawPickup_2.png)
-_Forage Harvester in the field picking up straw_
+_Forage Harvester in the field picking up straw. Did you notice that the header is Fendt Red?_
 
 ![Forage Pickup Header](/_screenshots/forageStrawPickup_3.png)
 _Forage Harvester in the field picking up straw, yes that's straw in the trailer_
 
 ![Forage Pickup Header](/_screenshots/forageStrawPickup_4.png)
-_Forage Harvester in the field picking up straw; Beauty shot! Did you notice that the header is Fendt Red?_
+_Forage Harvester in the field picking up straw; Beauty shot!_
 
 ![Forage Pickup Header](/_screenshots/forageStrawPickup_5.png)
-_Included in the pack are the 5 basegame pickup headers, modified to pickup straw &amp; grass._
+_Included in the pack are the 4 basegame pickup headers, modified to pickup BOTH straw &amp; grass._
