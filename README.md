@@ -57,7 +57,7 @@ _Forage Harvester picking up straw from a canola field, thanks to the Extended S
 _Forage Harvester picking up straw from a sorghum field, thanks to the Extended Straw Crops mod._
 
 ![Forage Pickup Straw w/ Extended Straw Crops](/_screenshots/forageStrawPickup_extendedSoybeans.png)
-_Forage Harvester picking up straw from a soybeans field, thanks to the Extended Straw Crops mod._
+_Forage Harvester picking up straw from a soybean field, thanks to the Extended Straw Crops mod._
 
 ![Forage Pickup Straw w/ Extended Straw Crops](/_screenshots/forageStrawPickup_extendedSunflower.png)
 _Forage Harvester picking up straw from a sunflower field, thanks to the Extended Straw Crops mod._
