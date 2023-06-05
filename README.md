@@ -46,3 +46,18 @@ _Forage Harvester in the field picking up straw; Beauty shot!_
 
 ![Forage Pickup Header](/_screenshots/forageStrawPickup_5.png)
 _Included in the pack are the 4 basegame pickup headers, modified to pickup BOTH straw &amp; grass._
+
+![Forage Pickup Straw w/ Extended Straw Crops](/_screenshots/forageStrawPickup_extendedCorn.png)
+_Forage Harvester picking up straw from a corn field, thanks to the Extended Straw Crops mod._
+
+![Forage Pickup Straw w/ Extended Straw Crops](/_screenshots/forageStrawPickup_extendedCanola.png)
+_Forage Harvester picking up straw from a canola field, thanks to the Extended Straw Crops mod._
+
+![Forage Pickup Straw w/ Extended Straw Crops](/_screenshots/forageStrawPickup_extendedSorghum.png)
+_Forage Harvester picking up straw from a sorghum field, thanks to the Extended Straw Crops mod._
+
+![Forage Pickup Straw w/ Extended Straw Crops](/_screenshots/forageStrawPickup_extendedSoybeans.png)
+_Forage Harvester picking up straw from a soybeans field, thanks to the Extended Straw Crops mod._
+
+![Forage Pickup Straw w/ Extended Straw Crops](/_screenshots/forageStrawPickup_extendedSunflower.png)
+_Forage Harvester picking up straw from a sunflower field, thanks to the Extended Straw Crops mod._
